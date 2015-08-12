@@ -5,7 +5,6 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 </head>
 <body>
@@ -28,12 +27,6 @@
 
   <nav class="column">
     <ul>
-      <li>home</li>
-      <li>your bike</li>
-      <li>mobile app</li>
-      <li>search</li>
-      <li>shop</li>
-      <li>community</li>
       <%if current_user%>
         <li>You're logged in as <%=current_user.email%></li>
         <li><%=link_to "Sign Out", destroy_user_session_path, :method => :delete%></li>
