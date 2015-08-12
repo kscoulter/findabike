@@ -1,0 +1,3 @@
+class IncidentsController < ApplicationController
+
+end
