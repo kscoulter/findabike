@@ -5,42 +5,21 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
-
-  <div class="row">
-    <div class="column column-1"></div>
-    <div class="column column-10">
-
-    </div>
-    <div class="column column-1">
-
-    </div>
-
-  </div>
-  <div class="row middle">
-  </div>
-  <div class="row footer">
-
-  </div>
-
-  <nav class="column">
+  <nav>
     <ul>
-      <li>home</li>
-      <li>your bike</li>
-      <li>mobile app</li>
-      <li>search</li>
-      <li>shop</li>
-      <li>community</li>
-      <%if current_user%>
-        <li>You're logged in as <%=current_user.email%></li>
-        <li><%=link_to "Sign Out", destroy_user_session_path, :method => :delete%></li>
-      <%else%>
-        <li><%=link_to "Sign Up", new_user_registration_path%></li>
-        <li><%=link_to "Log In", new_user_session_path%></li>
-      <%end%>
+        <!-- <li><%#link_to "Sign Out", destroy_user_session_path, :method => :delete%></li> -->
+        <li>Home</li>
+        <li>Your Bikes</li>
+        <li>Mobile App</li>
+        <li>Search</li>
+        <li>Shop</li>
+        <li>Community</li>
+        <li class="devise"><%=link_to "Sign Up", new_user_registration_path%></li>
+        <li class="devise sign-in"><%=link_to "Sign In", new_user_session_path%></li>
     </ul>
   </nav>
 
