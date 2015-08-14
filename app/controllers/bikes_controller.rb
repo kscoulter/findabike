@@ -19,9 +19,11 @@ class BikesController < ApplicationController
 
 
   def create
+    @user = current_user
     @bike = Bike.create(bike_params)
     @bike.user_id = current_user.id
     @bike.save
+    redirect_to root_path
   end
 
   def show
