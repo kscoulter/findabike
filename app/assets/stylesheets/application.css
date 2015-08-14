@@ -14,16 +14,13 @@
  *= require_self
  */
 
-/* ======= general ======= */
- * {
+ *{
    box-sizing: border-box;
  }
 
-body {
-  font-family: sans-serif;
+body{
   background-color: black;
   padding-bottom: 50px;
-  color: white;
 }
 
 nav {
@@ -43,7 +40,7 @@ nav ul{
   padding: 8px 5px;
 }
 
-nav.li {
+nav li{
   display: inline-block;
   padding: 5px;
   float: left;
@@ -76,12 +73,6 @@ li.sign-in a{
 
 li.sign-in a:visited{
   color: black;
-  margin: 0 5px;
-  float: right;
-}
-
-nav.ul {
-  margin: 0 20px;
 }
 
 section {
@@ -91,7 +82,7 @@ section {
   text-align: center;
 }
 
-.banner {
+.banner{
   background-image: url("http://media.tumblr.com/tumblr_m9fqcwuzl11r1p25e.jpg");
   background-size: cover;
   height: 486px;
@@ -109,17 +100,12 @@ section.middle {
   height: 373px;
 }
 
-footer {
+footer{
   background-color: black;
   color: white;
   text-align: center;
 }
-footer h2 {
+footer h2{
   padding-top: 20px;
   margin-top: 0;
-}
-
-/* ======= forms ======= */
-.field, .actions {
-  margin: 0.5em;
 }
