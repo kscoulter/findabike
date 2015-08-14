@@ -14,10 +14,14 @@ class BikesController < ApplicationController
   def new
     @bike = Bike.new
     @user = current_user
+    @bike.user_id = current_user.id
   end
 
 
   def create
+    @bike = Bike.create(bike_params)
+    @bike.user_id = current_user.id
+    @bike.save
   end
 
   def show
@@ -33,5 +37,7 @@ class BikesController < ApplicationController
   def destroy
   end
 
-
+  def bike_params
+    params.require(:bike).permit(:model, :color, :year, :type, :serial_number, :purchase_date, :purchase_price, :receipt_document, :receipt_photo_url)
+  end
 end
