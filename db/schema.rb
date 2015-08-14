@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20150810202608) do
     t.string  "model"
     t.string  "color"
     t.integer "year"
-    t.string  "type"
+    t.string  "bike_type"
     t.integer "serial_number"
     t.date    "purchase_date"
     t.integer "purchase_price"
