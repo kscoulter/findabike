@@ -24,6 +24,9 @@ body{
 }
 
 nav {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  height: 45px;
   position: fixed;
   z-index: 100;
   right: 0;
@@ -34,7 +37,7 @@ nav {
 
 nav ul{
   margin: 0;
-  padding: 0 5px;
+  padding: 8px 5px;
 }
 
 nav li{
@@ -43,6 +46,8 @@ nav li{
   float: left;
   color: white;
   text-transform: uppercase;
+  margin-right: 5px;
+  font-size: 12px;
 }
 
 nav li a{
@@ -55,6 +60,19 @@ li.devise{
 
 nav li a:visited{
   color: white;
+}
+
+.sign-in{
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+}
+li.sign-in a{
+  color: black;
+}
+
+li.sign-in a:visited{
+  color: black;
 }
 
 section {
